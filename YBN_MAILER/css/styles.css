@@ -1,0 +1,95 @@
+
+
+/*Shared Selectors/Headings */
+BODY { padding-left:0px; padding-right:0px;}
+h1 { font-size:2.125em; }
+h2 { font-size:1.125em; font-weight:700; line-height:1.4em; }
+h6 { font-size:0.625em; color:#999999; font-weight:700; }
+
+ul { font-size:0.625em;  list-style-type:none; color:#999999; }
+ul li { background: url(../images/bg_ulli.png) no-repeat scroll left 7px transparent;  line-height: 1.5em;   margin: 0 0 0.5%;  padding: 0 0 0 20px; } 
+strong { font-style:italic;}
+
+
+/*Layout*/
+
+header { background:#f4f6f8; height:70px; overflow:visible; margin:0 0 80px;  }
+	header .container { position:relative; }
+	header img { position:absolute; top:12px; left:0px;  }
+
+	main p { margin:10% 0; font-size:1.25em; font-weight:300; line-height:1.5em; }
+	
+	aside img { border: 1px solid #EFEDED;  border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px 2px rgba(180, 179, 179, 0.76); }
+
+
+/*Form*/
+	input, select, textarea, input[type="text"] { font-size: 1.125em;  height: 65px; margin: 0 1% 0 0; padding: 0 2%; width: 70%; }
+	input.submit { background:#0095D0; border:none; border-radius:5px; width:20%; font-size:1.5em; color:#fff;  }
+			input.submit:hover  { background:none repeat scroll 0 0 #04A3E1;}
+			input.submit:focus  { background:none repeat scroll 0 0 #037CAB;}
+
+	.cta { border-width:1px 0; border-style:solid; border-color:#e2e8ea; padding:5% 0 7%;  margin:5% 0 5%;}
+		.cta section {  padding:10px 20px; border:1px solid #bdc4c7; border-radius:5px; box-shadow:0px 0px 2px #C2BBBB; }
+		.cta section p { font-size:0.875em; line-height:1.8em;  }
+		.cta section a, .cta section a:active, .cta section a:visited , .cta section a:hover { cursor:default; color:#005A8C; text-decoration:none;}
+	
+	section.terms {  margin:0 0 5% 0;} 
+
+	footer { border-top:1px solid #e9ecf0; padding:2% 0 5%;}
+		footer img { float:left; height:auto; }
+		footer p { font-size:.625em; margin: 5px 2%; float:left; color:#999999;}
+
+
+/*IE FIXES */
+
+.lte9 input, .lte9  select, .lte9  textarea, .lte9  input[type="text"]  { width:20%; padding:20px 15px 5px; height:30px; }
+.lte9 .submit { height:55px; padding:0 2%;} 
+
+
+/*RESPONSIVE CSS START */
+
+
+/* Landscape tablet and down - FORMS hERE   */
+
+	@media (max-width: 979px) {
+
+		.container { padding:0 20px;}
+  		input, select, textarea, input[type="text"], input.submit { font-size:.9em;}
+   		.cta h2 { height:40px; margin:0px;}
+  		.cta section p { height:150px;}
+ 
+	}
+
+/* Portrait tablet to landscape and desktop */
+	@media (min-width: 768px) and (max-width: 979px) {
+		
+		body {  font-size:0.875em; }
+	
+	}
+  
+
+/* Landscape phone to portrait tablet */
+	@media (max-width: 767px) { 
+	
+	.cta section h2 { height:auto; }
+	.cta section p { height:auto;}
+	 }
+	 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+	Body { font-size:.75em;  } 
+	header img { left:0; right:0; margin:0 auto;}
+	
+	main h1 { line-height:1.2em;}
+	main p { margin:5% 0; }
+	input, select, textarea, input[type="text"] { width:95%; height:10%:; margin:0 0 6% 0; font-size:1.5em; }
+	input.submit { width:100%; font-size:2em;  } 
+	
+	.cta section h2 { height:auto; }
+	.cta section p { height:auto;}
+	.cta section a, .cta section a:active, .cta section a:visited { display:block; text-align:center; font-size:1.5em; font-weight:500; color:#fff; background:#0095D0; border-radius:5px; 
+																	padding:3% 2%; margin:1% 1%;}
+	footer { padding:4% 0 5%;;}
+
+}
